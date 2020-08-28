@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup as bs
 from utils.list_all_files import *
 import hashlib
 
-get_ipython().system('mkdir -p output')
+# get_ipython().system('mkdir -p output')
 
 def get_hash(text):
     return hashlib.md5(text.encode('utf8')).hexdigest()

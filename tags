@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+model_name	Generate GPT-2.py	/^model_name = '117M'$/;"	v
+seed	Generate GPT-2.py	/^seed = None$/;"	v
+nsamples	Generate GPT-2.py	/^nsamples = 10$/;"	v
+batch_size	Generate GPT-2.py	/^batch_size = 10$/;"	v
+length	Generate GPT-2.py	/^length = 40$/;"	v
+temperature	Generate GPT-2.py	/^temperature = 0.8 # 0 is deterministic$/;"	v
+top_k	Generate GPT-2.py	/^top_k = 40 # 0 means no restrictions$/;"	v
+enc	Generate GPT-2.py	/^enc = encoder.get_encoder(model_name)$/;"	v
+hparams	Generate GPT-2.py	/^hparams = model.default_hparams()$/;"	v
+length	Generate GPT-2.py	/^    length = hparams.n_ctx \/\/ 2$/;"	v
+sess	Generate GPT-2.py	/^sess = tf.InteractiveSession()$/;"	v
+context	Generate GPT-2.py	/^context = tf.placeholder(tf.int32, [batch_size, None])$/;"	v
+output	Generate GPT-2.py	/^output = sample.sample_sequence($/;"	v
+context	Generate GPT-2.py	/^    context=context,$/;"	v
+batch_size	Generate GPT-2.py	/^    batch_size=batch_size,$/;"	v
+saver	Generate GPT-2.py	/^saver = tf.train.Saver()$/;"	v
+ckpt	Generate GPT-2.py	/^ckpt = tf.train.latest_checkpoint(os.path.join('models', model_name))$/;"	v
+mapping	Generate GPT-2.py	/^mapping = {$/;"	v
+remove_special	Generate GPT-2.py	/^def remove_special(text):$/;"	f
+strip_word	Generate GPT-2.py	/^def strip_word(word):$/;"	f
+basenames	Generate GPT-2.py	/^basenames = []$/;"	v
+all_poems	Generate GPT-2.py	/^all_poems = {}$/;"	v
+total_lines	Generate GPT-2.py	/^total_lines = 0$/;"	v
+words	Generate GPT-2.py	/^words = set()$/;"	v
+original	Generate GPT-2.py	/^        original = open(fn).read()$/;"	v
+text	Generate GPT-2.py	/^        text = remove_special(original).split('\\n')$/;"	v
+poem	Generate GPT-2.py	/^        poem = text[3:]$/;"	v
+basename	Generate GPT-2.py	/^        basename = os.path.basename(fn)$/;"	v
+basename	Generate GPT-2.py	/^        basename = os.path.splitext(basename)[0]$/;"	v
+poem	Generate GPT-2.py	/^        poem = '\\n'.join(poem)$/;"	v
+words	Generate GPT-2.py	/^words = list(words)$/;"	v
+titlecase_word	Generate GPT-2.py	/^def titlecase_word(word):$/;"	f
+random_chunk	Generate GPT-2.py	/^def random_chunk(array, length):$/;"	f
+random_item	Generate GPT-2.py	/^def random_item(array):$/;"	f
+clean	Generate GPT-2.py	/^def clean(text):$/;"	f
+generate	Generate GPT-2.py	/^def generate(inspiration, seed):$/;"	f
+inspiration_lines	Generate GPT-2.py	/^inspiration_lines = 16$/;"	v
+all_results	Generate GPT-2.py	/^all_results = {}$/;"	v
+cur	Generate GPT-2.py	/^    cur = {}$/;"	v
+inspiration	Generate GPT-2.py	/^        inspiration = random_chunk(all_poems[basename]['poem'], inspiration_lines)$/;"	v
+inspiration	Generate GPT-2.py	/^        inspiration = '\\n'.join(inspiration)$/;"	v
+results	Generate GPT-2.py	/^        results = generate(inspiration, seed)$/;"	v
+convertNewlines	index.html	/^    function convertNewlines(text) {$/;"	f
+update	index.html	/^    function update() {$/;"	f
+randomSelect	index.html	/^    function randomSelect(elt) {$/;"	f
+regenerate	index.html	/^    function regenerate() {$/;"	f
+get_hash	Parse Poetry.py	/^def get_hash(text):$/;"	f
+conditions	Parse Poetry.py	/^conditions = ['.o-article .c-feature-hd', '.c-txt_attribution a', '.o-poem']$/;"	v
